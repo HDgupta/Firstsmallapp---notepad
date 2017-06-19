@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.task2.NewActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@drawable/index">
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/rect_shape"
+        android:ems="10"
+        android:hint="Enter name of file.."
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtData"
+        android:layout_width="391dp"
+        android:layout_height="368dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Start Typing.."
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="@+id/edtName"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"
+        android:layout_marginLeft="-57dp"
+        android:layout_marginTop="-7dp" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtData"
+        app:layout_constraintVertical_bias="0.285"
+        android:src="@drawable/ic_back"
+        tools:layout_editor_absoluteY="424dp" />
+
+    <ImageView
+        android:id="@+id/imgSave"
+        android:layout_width="72dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="41dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_check" />
+
+</android.support.constraint.ConstraintLayout>
